@@ -1,0 +1,11 @@
+* {
+  background-color: rgba(0,0,255,0.1);
+}
+
+.jumbotron .txt_container h1 {
+  text-align: center;
+}
+
+.footer .copyright {
+  text-align: center;
+}
