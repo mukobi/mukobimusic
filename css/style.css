@@ -10,8 +10,10 @@
   font-family: 'PT Sans', sans-serif;
 }
 
-.h1 {
-  font-family: 'Rubik', sans-serif;
+h1, h2 {
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: normal;
 }
 
 /***jumbotron***/
@@ -26,22 +28,24 @@
   display: block;
 }
 
-.jumbotron .txt_container {
+.jumbotron #jumbo_txt_container {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
   background-color: rgba(80,80,80,0.97);
-  border: 3px solid #2061cc;
+  border: 4px solid #2061cc;
   padding: 25px;
 }
-.jumbotron .txt_container h1 {
+.jumbotron #jumbo_txt_container h1 {
   text-align: center;
   color: #f0f0f0;
 }
 
 /*** main content ***/
-
+.main_content > div {
+  margin-bottom: 20px;
+}
 
 /*** footer ***/
 
