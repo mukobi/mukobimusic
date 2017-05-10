@@ -1,10 +1,49 @@
+/**** colors
+#2061cc = rgb(32, 97, 204) blue
+#505050 = rgb(80,80,80) grey
+#f0f0f0 = rgb(240, 240, 240) white
+****/
+
 * {
-  background-color: rgba(0,0,255,0.1);
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
 }
 
+.h1 {
+  font-family: 'Rubik', sans-serif;
+}
+
+/***jumbotron***/
+
+.jumbotron {
+  box-shadow: 0 0 0 30px  #505050,
+    0 30px 0 10px #2061cc;
+  margin-bottom: 1in;
+}
+.jumbotron .img_container img {
+  width: 100%;
+  display: block;
+}
+
+.jumbotron .txt_container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: rgba(80,80,80,0.97);
+  border: 3px solid #2061cc;
+  padding: 25px;
+}
 .jumbotron .txt_container h1 {
   text-align: center;
+  color: #f0f0f0;
 }
+
+/*** main content ***/
+
+
+/*** footer ***/
 
 .footer .copyright {
   text-align: center;
