@@ -1,5 +1,6 @@
 /**** colors
 #2081d0 = rgb(32, 129, 208) blue
+#282828 = rgb(40, 40, 40) super dark grey
 #464646 = rgb(70,70,70) dark grey
 #c8c8c8 = rgb(200, 200, 200) light grey
 #f0f0f0 = rgb(240, 240, 240) white
@@ -9,6 +10,7 @@
   margin: 0;
   padding: 0;
   font-family: 'PT Sans', sans-serif;
+  color: #282828;
 }
 
 h1, h2 {
@@ -17,12 +19,16 @@ h1, h2 {
   font-weight: normal;
 }
 
+a {
+  color: #2081d0;
+}
+
 /***jumbotron***/
 
 .jumbotron {
   box-shadow: 0 0 0 30px  #464646,
     0 30px 0 10px #1b53d6,
-    0 40px 5px 10px #c8c8c8;
+    0 40px 10px 10px #282828;
   margin-bottom: 40px;
   position: relative;
 }
@@ -63,6 +69,7 @@ h1, h2 {
   margin: 0 auto;
   max-width: 960px;
   padding: 20px;
+  border: 3px solid #282828;
 }
 
 .main_content > div {
