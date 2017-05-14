@@ -3,7 +3,7 @@ w=window,d=document,e=d.documentElement,g=d.getElementsByTagName('body')[0],x=w.
 
 var scrolled = false;
 var stuckPos;
-var magicStopPoint = .75*x - .54*y - 74;
+var magicStopPoint = .75*x - .54*y - 74; //equation to convert window height and width to value used to determine how far down the jumbotron text box should stop scrolling
 
 window.onscroll = function() {
   var txt = document.getElementById('jumbo_txt_container');

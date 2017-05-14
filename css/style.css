@@ -103,6 +103,10 @@ p {
   width: 220px;
 }
 
+.leftnav, .rightnav {
+  width: 30%;
+}
+
   /*navigation responsiveness*/
 @media screen and (max-width: 950px) {
   .navigation .navlimiter > div div {
