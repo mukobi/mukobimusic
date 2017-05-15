@@ -6,7 +6,7 @@ window.addEventListener('load',
 
 
 
-  if (x > 960) {
+  if (x > 960) { //desktop
     var scrolled = false;
     var stuckPos;
     var magicStopPoint = .75*x - .54*y - 74; //equation to convert window height and width to value used to determine how far down the jumbotron text box should stop scrolling
@@ -27,19 +27,17 @@ window.addEventListener('load',
         txt.style.top = "50%";
       }
     }
-
-
     jumboTextScroller(); //initial calling when page loads
 
-
-    window.onscroll = function() {
+    window.onscroll = function() { //update by calling the function when scrolled
       jumboTextScroller();
     }
+  } //end desktop
+
+  else { //mobile
+    var txt = document.getElementById('jumbo_txt_container');
+    txt.style.top = "50%";
+    txt.style.position = "absolute";
+    txt.style.transform = "translate(-50%,-50%)";
   }
-
-
-
-
-
-
 }, false);

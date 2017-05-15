@@ -138,6 +138,10 @@ p {
   position: absolute;
 }
 
+#jumbo_img_mobile {
+  display: none;
+}
+
 #jumbo_txt_container {
   position: fixed;
   top: 50%;
@@ -165,6 +169,25 @@ p {
   color: #f0f0f0;
   font-size: 18pt;
 }
+    /**jumbotron mobile styling**/
+@media screen and (max-width: 960px) {
+  #jumbo_txt_container {
+      padding: 10px;
+      width: 260px;
+      top: calc((100% - 95px) * .5 + 95px) !important;
+  }
+  #jumbo_img_desktop {
+    display: none;
+  }
+  #jumbo_img_mobile {
+    display: block;
+  }
+
+  .jumbotron {
+    height: calc(92vw + 90px);
+  }
+}
+
 
 /*** main content ***/
 .page_body {
