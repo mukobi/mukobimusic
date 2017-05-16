@@ -137,7 +137,7 @@ p {
   /*mobile design */
 @media screen and (max-width: 700px) {
   .navigation {
-	  position: absoulte;
+	  position: absolute;
   }
 	
   .navigation .navlimiter > .leftnav, .navigation .navlimiter > .rightnav {
