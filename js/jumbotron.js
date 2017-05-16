@@ -17,9 +17,11 @@ function jumboTextAlign() {
         }
         txt.classList.add('scrolled_down');
         txt.style.top = stuckPos;
+        txt.style.position = "absolute";
       } else {
         txt.classList.remove('scrolled_down');
         txt.style.top = "50%";
+        txt.style.position = "fixed";
       }
     }
     jumboTextScroller(); //initial calling when page loads
@@ -38,10 +40,7 @@ function jumboTextAlign() {
 }
 
 
-window.addEventListener('load',
-  function() {
-  jumboTextAlign();
-  
-  window.addEventListener('resize', jumboTextAlign);
-  
+window.addEventListener('load', function() {
+  jumboTextAlign(); //initial call on page load
+  window.addEventListener('resize', jumboTextAlign); //further calls when viewport is resized
 }, false);
