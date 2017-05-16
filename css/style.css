@@ -115,18 +115,20 @@ p {
   opacity: 0;
   transition: visibility 0s, opacity 300ms;
   position: fixed;
+	
+top:85px;
   left: 0;
   right: 0;
   bottom: 0;
 }
 .navigation .mobile_menu div {
   text-align: center;
-  height: calc(((100vh - 85px) / 7));
+  height: 14.28571%;
   color: #f0f0f0;
   background-color: #282828;
   border-bottom: 5px solid #464646;
   font-size: 24px;
-  line-height: calc(((100vh - 85px) / 7));
+  line-height: 14.28571%;
 }
 
 
