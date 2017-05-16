@@ -1,10 +1,5 @@
-
-window.addEventListener('load',
-  function() {
-
+function jumboTextAlign() {
   w=window,d=document,e=d.documentElement,g=d.getElementsByTagName('body')[0],x=w.innerWidth||e.clientWidth||g.clientWidth,y=w.innerHeight||e.clientHeight||g.clientHeight;
-
-
 
   if (x > 960) { //desktop
     var scrolled = false;
@@ -40,4 +35,13 @@ window.addEventListener('load',
     txt.style.position = "absolute";
     txt.style.transform = "translate(-50%,-50%)";
   }
+}
+
+
+window.addEventListener('load',
+  function() {
+  jumboTextAlign();
+  
+  window.addEventListener('resize', jumboTextAlign);
+  
 }, false);
