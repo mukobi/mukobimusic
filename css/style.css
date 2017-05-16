@@ -111,8 +111,9 @@ p {
 }
 
 .navigation .mobile_menu {
-  opacity: 0.0;
-  transition: opacity 300ms;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 300ms;
   position: fixed;
   left: 0;
   right: 0;
@@ -143,6 +144,9 @@ p {
   }
   .navigation .navlimiter {
     justify-content: space-around;
+  }
+  .navigation h1 {
+    width: 260px;
   }
 
   #sidebartoggler {display:none;}
@@ -188,8 +192,14 @@ p {
 
     /*display the mobile menu when hidden check box checked*/
   #sidebartoggler:checked + .navigation .mobile_menu {
-		opacity: 1.0;
+    visibility: visible;
+    opacity: 1;
 	}
+}
+@media screen and (max-width: 350px) {
+  .navigation h1 {
+    width: 220px;
+  }
 }
 
 
