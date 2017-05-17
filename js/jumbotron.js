@@ -37,6 +37,4 @@ window.addEventListener('load', function() {
     txt.style.position = "absolute";
     txt.style.transform = "translate(-50%,-50%)";
   }
-
-  // window.addEventListener('resize', jumboTextAlign); //further calls when viewport is resized
 }, false);

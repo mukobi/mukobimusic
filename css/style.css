@@ -139,7 +139,7 @@ p {
   .navigation {
 	  position: absolute;
   }
-	
+
   .navigation .navlimiter > .leftnav, .navigation .navlimiter > .rightnav {
     display: none;
   }
@@ -283,7 +283,21 @@ p {
 .page_body {
   background-color: #464646;
   padding-top: 80px;
+}
 
+@media screen and (max-width: 766px) {
+  .jumbotron {
+    box-shadow:
+      0 0 0 5px #282828,
+      0 5px 0 15px  #464646,
+      0 15px 0 10px #1b53d6,
+      0 35px 10px 15px #282828;
+  }
+  .page_body {padding-top: 10px;}
+  .page_body .main_content {margin-bottom: 35px;}
+  .footer .footermain {
+    padding: 30px;
+  }
 }
 
 .main_content {
