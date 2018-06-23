@@ -34,6 +34,10 @@ h1, h2 {
   font-weight: normal;
 }
 
+h1, h2, h3, h4 {
+  margin: 25px 0 15px 0;
+}
+
 a {
   color: #1b53d6;
 }
@@ -115,6 +119,7 @@ p {
   color: inherit;
   font-size: 24pt;
   width: 220px;
+  margin: 0;
 }
 .leftnav, .rightnav {
   width: 30%;
@@ -222,7 +227,7 @@ p {
 
 /***jumbotron***/
 
-.jumbotron {
+.jumbotron, .jumbotron-small {
   -webkit-box-shadow:
     0 0 0 5px #282828,
     0 5px 0 30px  #464646,
@@ -240,10 +245,22 @@ p {
 .jumbotron {
   height: 75vw;
 }
+.jumbotron-small {
+  height: 40vw;
+  overflow: hidden;
+}
 
 .jumbotron .img_container img {
   width: 100%;
   display: block;
+  bottom: 0;
+  position: absolute;
+}
+
+.jumbotron-small .img_container img {
+  width: 100%;
+  display: block;
+  top: 0;
   bottom: 0;
   position: absolute;
 }
@@ -301,6 +318,14 @@ p {
   .jumbotron {
     height: calc(90vw + 80px);
   }
+
+  .jumbotron-small {
+    height: calc(80vw);
+  }
+
+  .jumbotron-small .img_container img {
+    top: initial;
+  }
 }
 
 
@@ -352,6 +377,40 @@ p {
 
 .main_content > div > * {
   margin-bottom: 15px;
+}
+
+.iframe-desktop {
+  display: block;
+}
+.iframe-mobile-large {
+  display: none;
+}
+.iframe-mobile-small {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .iframe-desktop {
+    display: none;
+  }
+  .iframe-mobile-large {
+    display: block;
+  }
+  .iframe-mobile-small {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .iframe-desktop {
+    display: none;
+  }
+  .iframe-mobile-large {
+    display: none;
+  }
+  .iframe-mobile-small {
+    display: block;
+  }
 }
 
 
